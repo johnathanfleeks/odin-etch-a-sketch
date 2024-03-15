@@ -34,6 +34,7 @@ function createGrid(height, width) {
 
         gridContainer.appendChild(row);
     }
+    gridContainer.classList.remove('hide');
 }
 
 gridContainer.addEventListener('mouseover', (event) => {
@@ -50,4 +51,5 @@ gridContainer.addEventListener('mouseover', (event) => {
 
 deleteBtn.addEventListener('click', () => {
     gridContainer.textContent = '';
+    gridContainer.classList.add('hide')
 })

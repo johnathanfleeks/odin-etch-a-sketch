@@ -11,7 +11,16 @@
     padding: 20px;
 }
 
-.grid-wrapper {
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,15 +28,11 @@
     margin: 25px;
 }
 
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 #grid {
-    border: 1px solid black;
     height: 58px;
     width: 58px;
+}
+
+.hide {
+    display: none;
 }
