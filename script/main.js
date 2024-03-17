@@ -25,7 +25,7 @@ function createGrid(height, width) {
         const row = document.createElement('div');
         row.className = 'row';
         
-        for(let j = 0; j <= width; j++) {
+        for(let j = 1; j <= width; j++) {
             const tile = document.createElement('div');
             tile.id = 'grid';
 
